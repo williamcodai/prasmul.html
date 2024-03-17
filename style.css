@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins",sans-serif ; 
+    font-weight: 400;
+    font-style: normal;
+    min-height: 200vh;
+    background-color: #00376a;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    background-color: red;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+/* header */
+header .container{
+    justify-content: space-between;
+    height: 60px;
+    background-color:#00376a ;
+}
+header .container .nav-header{
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .nav-header a{
+    color: gray;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+header .container .nav-header a.button{
+    display: inline-block;
+    background-color: rgb(61, 177, 102);
+    color: white;
+    font-weight: bold;
+    padding: 0 5px;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    /* letter-spacing: 1.; */
+}
+/* sticky nav */
+nav{
+    z-index: 998;
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+nav .container {
+    justify-content: space-between;
+    height: 91px;
+    background-color: white;
+}
+nav .container .sticky-nav li.item{
+    display: inline-block;
+    list-style: none;
+    font-size: 13px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+/* hero section */
+.hero{
+    height: calc(100vh - 60px - 91px);
+    background-color: yellow;
+    background-image: url(assets//prasmul.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:  no-repeat;
+
+}
+.hero .container{
+    background-color: transparent;
+}
+
+/* section faculty */
+
+div.faculty{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 255px;
+    background-color: salmon;
+    gap: 10px;
+    padding: 10px;
+}
+.faculty .item-faculty{
+    background-color: #00376a;
+}
+
+/* section about */
+section.about{
+    height: 1000px;
+    background-color: #00376a;
+}
+/* section floating img */
+section.floating-img{
+    position: relative;
+    top :40px;
+    height: 190px;
+    width: 80%;
+    background-color: salmon;
+    margin: 0 auto;
+}
+/* section video-uni */
+section.video-uni{
+    position: relative;
+    height: 673px;
+    background-color: yellowgreen;
+}
+section.video-uni .container-video{
+    height: 100%;
+    background-color: gray;
+    opacity: 0.5;
+}
+section.video-uni .container-text{
+    position: absolute;
+    height: 673px;
+    width: 100%;
+    background-color: rgba(255, 255,255, 0);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* footer */
+footer .nav-buttons{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    width: 70px;
+    height: 150px;
+    font-size: 40px;
+    padding : 5px;
+    border-radius: 100px;
+}
+.nav-buttons a{
+    display: block;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+.faculty .item-faculty img{ 
+    width: auto;
+    height: fit-content;
+}
